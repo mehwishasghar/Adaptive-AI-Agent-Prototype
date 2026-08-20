@@ -378,8 +378,8 @@ The longer-term research direction is to investigate AI agents that can balance 
 # Author
 
 **Mehwish Asghar**  
-Lab Instructor & FYP Coordinator
-Indie Game Developer
+Lab Instructor & FYP Coordinator  
+Indie Game Developer  
 B.S. Software Engineering  
 GIFT University, Pakistan  
 
