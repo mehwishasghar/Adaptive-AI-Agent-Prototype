@@ -1,95 +1,114 @@
----
+# Adaptive AI Agent Prototype
 
-## Results
+A small experimental prototype investigating how different levels of AI
+decision complexity affect runtime performance and behavioural outcomes
+in a Unity environment.
 
-The measurements were analysed using Python. The following summary
-statistics were obtained from the three experimental configurations.
-
-| Complexity | Mean FPS | Min FPS | Max FPS | Mean CPU (ms) | Max CPU (ms) | Mean Memory (MB) | Decisions | Target Reached (s) |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Low | 733.17 | 321.89 | 801.78 | 1.41 | 2.42 | 1097.41 | 5 | 3.0 |
-| Medium | 653.99 | 342.75 | 809.18 | 1.62 | 3.32 | 1097.34 | 12 | 3.0 |
-| High | 724.22 | 328.95 | 791.60 | 1.42 | 4.84 | 1098.62 | 14 | 3.0 |
-
-### Observations
-
-- **Decision frequency increased** with AI complexity, from 5 decisions
-  in the Low configuration to 12 in Medium and 14 in High.
-- **Target-reaching time remained approximately 3 seconds** across all
-  configurations.
-- **Medium complexity produced the lowest mean FPS** and higher average
-  CPU time than Low and High.
-- **High complexity produced the highest maximum CPU time**, indicating
-  occasional computational spikes.
-- **Memory usage remained relatively stable** across the three
-  configurations.
-- The results suggest that increasing decision complexity does not
-  necessarily produce a linear decrease in runtime performance under
-  this experimental setup.
-
-These results provide an initial indication of the trade-off between
-AI decision frequency, computational cost, and behavioural performance.
+The project combines a Unity-based AI experiment with Python-based
+analysis of the collected performance measurements.
 
 ---
 
-## Analysis
+## Research Question
 
-The experiment demonstrates that increasing the frequency of AI
-decision-making changes the computational profile of the agent.
+**How does increasing AI decision complexity affect computational
+performance and behavioural outcomes in a real-time Unity environment?**
 
-The number of decisions increased substantially between the Low and High
-configurations, while target-reaching performance remained unchanged at
-approximately 3 seconds.
+The experiment compares three AI complexity levels:
 
-However, the performance measurements do not show a simple linear
-relationship between complexity and FPS. This indicates that other
-runtime factors may also influence performance.
+- Low
+- Medium
+- High
 
-A larger number of trials, more complex environments, additional agents,
-and controlled hardware conditions would be required to draw stronger
-conclusions.
+The objective is to examine the relationship between AI decision
+frequency, computational cost, and behavioural performance.
 
 ---
 
-## Limitations
+## Experiment Overview
 
-This prototype is an initial experimental investigation rather than a
-large-scale benchmark.
+The Unity environment contains an AI agent that navigates toward a target
+using different levels of decision-making complexity.
 
-Important limitations include:
+Each configuration was executed under the same experimental setup for
+approximately 30 seconds.
 
-- A single Unity environment was used.
-- The experiment used one primary navigation task.
-- Each configuration was evaluated under a limited number of runs.
-- Hardware and background system load can affect FPS, CPU, and memory
-  measurements.
-- Behavioural quality was represented primarily by target-reaching
-  success/time.
-- The current experiment does not evaluate more complex multi-agent
-  behaviour.
+The experiment records:
 
-Future experiments could address these limitations by increasing the
-number of trials, introducing multiple agents and environments, and
-using more detailed behavioural metrics.
+- FPS
+- CPU time per frame
+- Memory usage
+- Number of AI decisions
+- Target-reaching behaviour
+
+The collected measurements are exported as CSV files and analysed using
+Python.
 
 ---
 
-## Python Analysis
+## Experimental Conditions
 
-Python was used to process the Unity-generated CSV measurements and
-produce summary statistics and comparison visualisations.
+| Configuration | Description |
+|---|---|
+| Low | Lower AI decision complexity and decision frequency |
+| Medium | Intermediate AI decision complexity and decision frequency |
+| High | Higher AI decision complexity and decision frequency |
 
-The analysis generates:
+The complexity levels primarily differ in how frequently the agent
+evaluates and updates its behaviour.
 
-- Summary statistics CSV
-- Combined results CSV
-- FPS comparison graph
-- CPU comparison graph
-- Memory comparison graph
-- Decision-frequency comparison graph
-- Target-reaching comparison graph
+---
 
-The generated analysis files are located in:
+## Measurements
+
+### 1. FPS
+
+Measures the rendering/runtime performance of the Unity environment.
+
+Higher FPS generally indicates lower runtime workload under the
+experimental conditions.
+
+### 2. CPU Time
+
+Measured in milliseconds and used as an indicator of computational cost.
+
+Lower CPU time generally indicates lower computational workload.
+
+### 3. Memory Usage
+
+Measures the memory footprint observed during the experiment.
+
+### 4. Decision Frequency
+
+Records the number of AI decisions made by the agent during the run.
+
+This provides a direct indication of how frequently the AI evaluates
+and updates its behaviour.
+
+### 5. Behavioural Outcome
+
+The experiment records whether the agent successfully reaches its target.
+
+Target-reaching time is used as a simple behavioural performance
+measure.
+
+---
+
+## Experimental Procedure
+
+For each AI complexity level:
+
+1. The Unity experiment was started.
+2. The agent was given the same target-oriented task.
+3. Runtime performance was recorded.
+4. AI decisions were counted.
+5. Target-reaching behaviour was recorded.
+6. Measurements were exported to CSV.
+7. The resulting datasets were analysed using Python.
+
+The three experimental datasets are:
 
 ```text
-analysis/
+low.csv
+medium.csv
+high.csv
