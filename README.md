@@ -138,24 +138,23 @@ The Python analysis generates comparison graphs for the main experimental measur
 
 ### FPS Comparison
 
-![FPS Comparison](Analysis/mean_fps.png)
+![FPS Comparison](Results/Analysis/mean_fps.png)
 
 ### CPU Comparison
 
-![CPU Comparison](Analysis/mean_cpu.png)
+![CPU Comparison](Results/Analysis/mean_cpu.png)
 
 ### Memory Comparison
 
-![Memory Comparison](Analysis/mean_memory.png)
+![Memory Comparison](Results/Analysis/mean_memory.png)
 
 ### Decision Frequency Comparison
 
-![Decision Frequency](Analysis/decision_count.png)
+![Decision Frequency](Results/Analysis/decision_count.png)
 
 ### Target-Reaching Comparison
 
-![Target Reached](Analysis/target_reach_time.png)
-
+![Target Reached](Results/Analysis/target_reach_time.png)
 
 ---
 
