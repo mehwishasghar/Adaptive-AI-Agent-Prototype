@@ -378,6 +378,8 @@ The longer-term research direction is to investigate AI agents that can balance 
 # Author
 
 **Mehwish Asghar**  
+Lab Instructor & FYP Coordinator
+Indie Game Developer
 B.S. Software Engineering  
 GIFT University, Pakistan  
 
@@ -393,5 +395,4 @@ GIFT University, Pakistan
 
 # Repository
 
-* **GitHub:** [https://github.com](https://github.com)
-* **Portfolio:** [https://github.io](https://github.io)
+* **Portfolio:** [https://mehwishasghar.github.io](https://mehwishasghar.github.io)
