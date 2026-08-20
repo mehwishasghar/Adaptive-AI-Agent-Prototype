@@ -138,23 +138,23 @@ The Python analysis generates comparison graphs for the main experimental measur
 
 ### FPS Comparison
 
-![FPS Comparison](Analysis/fps_comparison.png)
+![FPS Comparison](Analysis/mean_fps.png)
 
 ### CPU Comparison
 
-![CPU Comparison](Analysis/cpu_comparison.png)
+![CPU Comparison](Analysis/mean_cpu.png)
 
 ### Memory Comparison
 
-![Memory Comparison](Analysis/memory_comparison.png)
+![Memory Comparison](Analysis/mean_memory.png)
 
 ### Decision Frequency Comparison
 
-![Decision Frequency](Analysis/decisions_comparison.png)
+![Decision Frequency](Analysis/decision_count.png)
 
 ### Target-Reaching Comparison
 
-![Target Reached](Analysis/target_reached_comparison.png)
+![Target Reached](Analysis/target_reach_time.png)
 
 ---
 
@@ -253,11 +253,11 @@ The analysis produces:
 
 * `summary.csv`
 * `combined_results.csv`
-* `fps_comparison.png`
-* `cpu_comparison.png`
-* `memory_comparison.png`
-* `decisions_comparison.png`
-* `target_reached_comparison.png`
+* `mean_fps.png`
+* `mean_cpu.png`
+* `mean_memory.png`
+* `decision_count.png`
+* `target_reach_time.png`
 
 ---
 
@@ -277,11 +277,11 @@ Adaptive-AI-Agent-Prototype/
 ├── Analysis/
 │   ├── summary.csv
 │   ├── combined_results.csv
-│   ├── fps_comparison.png
-│   ├── cpu_comparison.png
-│   ├── memory_comparison.png
-│   ├── decisions_comparison.png
-│   └── target_reached_comparison.png
+│   ├── mean_fps.png
+│   ├── mean_cpu.png
+│   ├── mean_memory.png
+│   ├── decision_count.png
+│   └── target_reach_time.png
 │
 ├── analysis.py
 │
